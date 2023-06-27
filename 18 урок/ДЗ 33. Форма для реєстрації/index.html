@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="index.css" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+<main>
+  <div class="container">
+    <form id="form">
+      
+      <input class="input" id="name" placeholder="Iм’я" required type="text">
+      <input class="input" id="surname" placeholder="Фамілія" required type="text">
+      <input class="input" id="birthdate" placeholder="Дата народження" required type="text">
+
+      <div class="input" id="female">
+        <h3>Виберіть стать</h3>
+        <div class="man">
+          <input type="radio" name="gender" value="Чоловічий"> <p class="text">Чоловічий</p>
+        </div>
+        <div class="woman">
+          <input type="radio" name="gender" value="Жіночий"> <p class="text">Жіночій</p>
+        </div>
+      </div>
+
+          <select class="input" id="city">
+        <option value="Оберіть Місто">Оберіть Місто</option>
+        <option value="Київ">Київ</option>
+        <option value="Одеса">Одеса</option>
+        <option value="Чернігів">Чернігів</option>
+        <option value="Дріпро">Дріпро</option>
+      </select>
+
+      <textarea class="input" id="address" placeholder="Введіть свою адресу"></textarea>
+
+      <div class="input" id="lenguage">
+        <h3>Мови, якими володієте</h3>
+        <div class="eng">
+          <input type="checkbox" name="languages" value="english"><p class="text">english</p>
+        </div>
+        <div class="ukr">
+          <input type="checkbox" name="languages" value="ukraine"><p class="text">ukraine</p>
+        </div>
+        <div class="spa">
+          <input type="checkbox" name="languages" value="spain"><p class="text">spain</p>
+        </div>
+      </div>
+
+      <button class="btn" id="button" type="button">Зберегти</button>
+
+    </form>
+  </div>
+</main>
+<script src="./index.js"></script>
+</body>
+</html>
